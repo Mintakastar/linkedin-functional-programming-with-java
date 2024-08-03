@@ -16,8 +16,12 @@ public class Chapter2Video1 {
         Integer result = myTripple.apply(5);
         System.out.println(result);
 
+        // README
         //a class method
         //cualquier metodo de una clase lo podemos pasar a una funcion
+        //
+        //una first class function, es basicamente una funcion que se puede pasar a una variable, se puede pasar como parametro a otras funciones,
+        //osea un Function de java
 
 
         System.out.println("\nEjemplo ABS de math con una funcion (todos saldran positivos)");
