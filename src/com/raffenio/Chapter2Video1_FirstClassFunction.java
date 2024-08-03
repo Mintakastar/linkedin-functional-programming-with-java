@@ -2,7 +2,7 @@ package com.raffenio;
 
 import java.util.function.Function;
 
-public class Chapter2Video1 {
+public class Chapter2Video1_FirstClassFunction {
 
     protected static class MyMath{
         public static Integer triple(Integer x){
