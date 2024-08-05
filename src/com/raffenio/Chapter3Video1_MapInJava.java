@@ -12,6 +12,7 @@ public class Chapter3Video1_MapInJava {
         /*
          * Mapping with streams
          *   convert one list of certain type to another, o do some processing on it.
+         * it works with a Function. it takes a value ands returns another value
          * */
 
         //have a list of int , and create a new list of doubled those ints
