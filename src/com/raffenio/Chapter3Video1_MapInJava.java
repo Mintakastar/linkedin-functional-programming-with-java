@@ -17,6 +17,7 @@ public class Chapter3Video1_MapInJava {
         //have a list of int , and create a new list of doubled those ints
 
         Integer[] list = {1,2,3,4,5,6,7,8,9,10};
+        List<Integer> listOfIntegers =new ArrayList<>(Arrays.asList(list));
 
         //first old aproach
         List<Integer> doubledFirstAproach = new ArrayList<>();
