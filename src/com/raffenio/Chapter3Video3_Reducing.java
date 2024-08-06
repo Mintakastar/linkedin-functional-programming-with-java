@@ -18,11 +18,11 @@ public class Chapter3Video3_Reducing {
          *   it works with binary operator   BinaryOperator<T>
          *   it takes 2 values if the same type, and returns one value of the same type
          *
-         *  the 2 parameters are the acumulator and the curren value
+         *  the 2 parameters are the accumulator and the curren value
          * the accumulator can be set with an initial value
          *
-         * recuce( binaryOperator )           -> returns an Optional<T>  , because we are not sure if it will return something
-         * recuce( initial, binaryOperator )  -> returns a value itself  , if it does not process anyhing , it will retun at least the initial value.
+         * reduce( binaryOperator )           -> returns an Optional<T>  , because we are not sure if it will return something
+         * reduce( initial, binaryOperator )  -> returns a value itself  , if it does not process anything , it will return at least the initial value.
          * */
 
 
