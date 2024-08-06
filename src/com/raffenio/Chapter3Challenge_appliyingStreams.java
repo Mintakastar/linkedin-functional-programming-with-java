@@ -4,6 +4,7 @@ package com.raffenio;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Chapter3Challenge_appliyingStreams {
 
@@ -35,6 +36,23 @@ public class Chapter3Challenge_appliyingStreams {
         // Your code goes here
         return numbersWords;
     }
+
+
+
+
+    // Return the largest number in the 'numbers' array
+    static List<String> filterAndTransformVideoSolution(List<Integer> numbers) {
+
+        String[] numberNames = { "zero","one","two","three","four","five","six","seven","eigth","nine"};
+        List<String> numbersNamesList = new ArrayList<>(Arrays.asList(numberNames));
+
+        return numbers.stream()
+                .filter(x->x%3==0)
+                .map(x->numberNames[x])
+                .toList();
+
+
+    }
     public static void main(String[] args) {
 
 // This is how your code will be called.
@@ -43,6 +61,14 @@ public class Chapter3Challenge_appliyingStreams {
         Integer[] numbersArr = { 1, 5, 3, 6, 8, 9, 2 };
         List<Integer> numbers = new ArrayList<>(Arrays.asList(numbersArr));
         List<String> result = Chapter3Challenge_appliyingStreams.filterAndTransform(numbers);
+
+        System.out.println(numbers);
+        System.out.println(result);
+
+
+
+
+        result = Chapter3Challenge_appliyingStreams.filterAndTransformVideoSolution(numbers);
 
         System.out.println(numbers);
         System.out.println(result);
