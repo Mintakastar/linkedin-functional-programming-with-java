@@ -95,9 +95,10 @@ public class Chapter3Challenge1 {
         };
         List<Employee> employees = new ArrayList<>(Arrays.asList(employeesArr));
         //the sum of all of teh employees
-        float allSalary = employees.stream().map(emp->emp.salary).reduce(0f,
-                        (sumSalary,salary) -> sumSalary + salary
-                    );
+        float allSalary =
+                employees.stream()
+                .map(emp->emp.salary)
+                .reduce(0f,             (sumSalary,salary) -> sumSalary + salary             );
 
         System.out.println(allSalary);
 
